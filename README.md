@@ -16,7 +16,7 @@ du navigateur ne fonctionne que sur `localhost` ou en HTTPS — c'est
 le cas par défaut avec `npm start` et avec un déploiement classique
 (Vercel, Netlify...).
 
-## Ce qui a été ajouté sur la base fournie
+## Différentes composantes du projet
 
 - **Carte géographique à l'accueil** (`Components/MapExplorer.js`,
   react-leaflet + OpenStreetMap, aucune clé API requise) : localise
@@ -40,7 +40,7 @@ le cas par défaut avec `npm start` et avec un déploiement classique
   (`context/ThemeContext.js` + `Components/ThemeToggle.js`) : tokens
   CSS dans `src/index.css`, persistés en `localStorage`.
 
-## Organisation
+## Organisation du projet
 
 ```
 src/
@@ -71,9 +71,9 @@ src/
     APropos.js, Contact.js, NonTrouvee.js
 ```
 
-## Limites à connaître (pas de backend)
+## Limites  (pas de backend)
 
 Toutes les données viennent de `src/data/`. Les formulaires
 (annonce, publicité, contact) simulent un envoi — rien n'est stocké
 côté serveur. La page Publicité garde un aperçu dans le navigateur
-(`localStorage`) le temps qu'une vraie API existe.
+(`localStorage`).
