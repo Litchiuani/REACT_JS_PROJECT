@@ -1,0 +1,121 @@
+.navbar {
+  background: var(--couleur-marine);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.navbar-interieur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  font-family: var(--police-titre);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.navbar-logo span {
+  color: var(--couleur-jaune);
+}
+
+.navbar-mobile-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.navbar-burger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.navbar-liens {
+  display: flex;
+  gap: 1.05rem;
+  flex-wrap: nowrap;
+}
+
+.navbar-lien {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--couleur-tinte-texte);
+  padding: 0.35rem 0;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.navbar-lien:hover {
+  color: #fff;
+}
+
+.navbar-lien.active {
+  color: #fff;
+  border-bottom-color: var(--couleur-jaune);
+  font-weight: 700;
+}
+
+.navbar-actions {
+  flex-shrink: 0;
+}
+
+.navbar-bouton-connexion {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  background: transparent;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.88rem;
+}
+
+.navbar-bouton-connexion:hover {
+  background: #fff;
+  color: var(--couleur-marine-fonce);
+}
+
+@media (max-width: 860px) {
+  .navbar-burger {
+    display: block;
+  }
+
+  .navbar-liens {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    order: 3;
+    background: var(--couleur-marine-fonce);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+  }
+
+  .navbar-liens--ouvert {
+    display: flex;
+  }
+
+  .navbar-lien {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+  }
+
+  .navbar-lien.active {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .navbar-actions {
+    display: none;
+  }
+}

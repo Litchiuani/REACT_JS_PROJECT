@@ -1,0 +1,32 @@
+.stats-grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stats-valeur {
+  font-family: var(--police-titre);
+  font-size: 2.25rem;
+  color: var(--couleur-accent);
+  margin: 0;
+}
+
+.stats-libelle {
+  color: var(--couleur-texte-doux);
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .stats-grille {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .stats-grille {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

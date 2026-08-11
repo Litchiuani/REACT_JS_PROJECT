@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Palette TerangaVillas — marron & blanc, chaleureuse et locale */
+  --couleur-fond: #F8F3EC;
+  --couleur-carte: #FFFFFF;
+  --couleur-texte: #2B1D14;
+  --couleur-texte-doux: #8A7461;
+
+  --couleur-marine: #6B4226;        /* brun principal (navbar, liens, boutons) */
+  --couleur-marine-fonce: #4A2C17;  /* brun foncé (hover / variante sombre) */
+  --couleur-accent: #B5652D;        /* cuivre — appels à l'action */
+  --couleur-accent-fonce: #954F20;
+  --couleur-jaune: #E8B872;         /* beige doré — touches logo / notes */
+  --couleur-bordure: #E6DACB;
+
+  /* tons utilisés sur fonds foncés (navbar/footer/hero), stables entre les 2 thèmes */
+  --couleur-tinte-douce: #F1E4D6;
+  --couleur-tinte-texte: #E4D2BC;
+
+  --police-titre: 'Fraunces', serif;
+  --police-texte: 'Work Sans', sans-serif;
+
+  --ombre-carte: 0 6px 20px rgba(43, 29, 20, 0.10);
+  --ombre-carte-hover: 0 14px 30px rgba(43, 29, 20, 0.18);
+}
+
+/* Mode sombre : le blanc devient noir, le marron reste la signature */
+[data-theme='dark'] {
+  --couleur-fond: #17110C;
+  --couleur-carte: #221A13;
+  --couleur-texte: #F3E9DD;
+  --couleur-texte-doux: #B8A28C;
+
+  --couleur-marine: #9A6A42;
+  --couleur-marine-fonce: #6B4226;
+  --couleur-accent: #D98A45;
+  --couleur-accent-fonce: #B5652D;
+  --couleur-jaune: #E8B872;
+  --couleur-bordure: #3A2C1F;
+
+  --couleur-tinte-douce: #2B2117;
+  --couleur-tinte-texte: #D8C3AA;
+
+  --ombre-carte: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --ombre-carte-hover: 0 14px 34px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--couleur-fond);
+  color: var(--couleur-texte);
+  font-family: var(--police-texte);
+  line-height: 1.55;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3 {
+  font-family: var(--police-titre);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--couleur-texte);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--police-texte);
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: var(--police-texte);
+}

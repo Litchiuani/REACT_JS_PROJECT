@@ -1,0 +1,74 @@
+.footer {
+  background: var(--couleur-marine-fonce);
+  color: var(--couleur-tinte-texte);
+  margin-top: 3rem;
+}
+
+.footer-grille {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 1fr);
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: var(--police-titre);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.footer-logo span {
+  color: var(--couleur-jaune);
+}
+
+.footer-baseline {
+  font-size: 0.88rem;
+  max-width: 260px;
+  color: var(--couleur-tinte-texte);
+}
+
+.footer-colonne h4 {
+  color: #fff;
+  font-family: var(--police-texte);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.9rem;
+}
+
+.footer-colonne nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-colonne a {
+  font-size: 0.9rem;
+  color: var(--couleur-tinte-texte);
+}
+
+.footer-colonne a:hover {
+  color: #fff;
+}
+
+.footer-bas {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem 0;
+  font-size: 0.85rem;
+  color: var(--couleur-tinte-texte);
+}
+
+@media (max-width: 800px) {
+  .footer-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grille {
+    grid-template-columns: 1fr;
+  }
+}

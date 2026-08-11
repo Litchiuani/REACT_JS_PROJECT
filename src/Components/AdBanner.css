@@ -1,0 +1,77 @@
+.pub-bandeau {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.1rem;
+  margin-top: 1.25rem;
+}
+
+.pub-carte {
+  background: var(--couleur-carte);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--ombre-carte);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pub-carte:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ombre-carte-hover);
+}
+
+.pub-carte-image {
+  height: 110px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.pub-carte-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--couleur-marine-fonce);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.pub-carte-corps {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.pub-carte-secteur {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--couleur-accent);
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+
+.pub-carte-corps h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-carte-texte {
+  font-size: 0.85rem;
+  color: var(--couleur-texte-doux);
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .pub-bandeau {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .pub-bandeau {
+    grid-template-columns: 1fr;
+  }
+}

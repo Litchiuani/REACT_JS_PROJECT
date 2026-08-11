@@ -1,0 +1,91 @@
+.modal-fond {
+  position: fixed;
+  inset: 0;
+  background: rgba(23, 17, 12, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-carte {
+  background: var(--couleur-carte);
+  border-radius: 20px;
+  max-width: 520px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: var(--ombre-carte-hover);
+}
+
+.modal-fermer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--couleur-tinte-douce);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--couleur-texte-doux);
+}
+
+.modal-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--couleur-accent);
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+}
+
+.modal-texte {
+  color: var(--couleur-texte-doux);
+  margin-bottom: 1.5rem;
+}
+
+.modal-choix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.modal-choix-carte {
+  background: var(--couleur-fond);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  text-align: left;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.modal-choix-carte:hover {
+  border-color: var(--couleur-accent);
+  transform: translateY(-2px);
+}
+
+.modal-choix-icone {
+  font-size: 1.6rem;
+}
+
+.modal-choix-titre {
+  font-weight: 700;
+  font-family: var(--police-titre);
+  font-size: 1.05rem;
+}
+
+.modal-choix-texte {
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 520px) {
+  .modal-choix {
+    grid-template-columns: 1fr;
+  }
+}

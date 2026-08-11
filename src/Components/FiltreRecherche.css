@@ -1,0 +1,44 @@
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.filtre-champ {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 999px;
+  font-family: var(--police-texte);
+  font-size: 0.9rem;
+}
+
+.filtre-champ:focus {
+  outline: 2px solid var(--couleur-accent);
+  outline-offset: 1px;
+}
+
+.filtre-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.filtre-select {
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: var(--couleur-carte);
+  color: var(--couleur-texte);
+}
+
+.filtre-select:focus {
+  outline: 2px solid var(--couleur-accent);
+  outline-offset: 1px;
+}

@@ -1,0 +1,290 @@
+.bien-detail-retour {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--couleur-marine);
+  font-weight: 600;
+}
+
+.bien-detail-galerie {
+  margin-bottom: 1.5rem;
+}
+
+.bien-detail-image {
+  height: 380px;
+  border-radius: 16px;
+  background-color: var(--couleur-tinte-douce);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.6rem;
+  position: relative;
+  transition: background-image 0.15s ease;
+}
+
+.bien-detail-photo-legende {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(23, 17, 12, 0.6);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.bien-detail-disponibilite {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  color: #2E7D32;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+}
+
+.bien-detail-disponibilite--non {
+  color: #B3261E;
+}
+
+.bien-detail-vignettes {
+  display: flex;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+  scroll-snap-type: x proximity;
+}
+
+.bien-detail-vignette {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 110px;
+  height: 78px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bien-detail-vignette span {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: rgba(23, 17, 12, 0.65);
+  color: #fff;
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 0.2rem 0.35rem;
+  text-align: left;
+}
+
+.bien-detail-vignette--active {
+  border-color: var(--couleur-accent);
+}
+
+.bien-detail-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.bien-detail-badge--location {
+  background: var(--couleur-marine);
+}
+
+.bien-detail-badge--vente {
+  background: var(--couleur-accent-fonce);
+}
+
+.bien-detail-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid var(--couleur-bordure);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.bien-detail-ville {
+  color: var(--couleur-texte-doux);
+  font-weight: 600;
+  margin: 0;
+}
+
+.bien-detail-prix-bloc {
+  text-align: right;
+}
+
+.bien-detail-prix {
+  font-family: var(--police-titre);
+  font-size: 1.5rem;
+  color: var(--couleur-texte);
+  margin: 0;
+}
+
+.bien-detail-prix span {
+  font-family: var(--police-texte);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--couleur-texte-doux);
+}
+
+.bien-detail-note {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--couleur-texte-doux);
+}
+
+.bien-detail-caracteristiques {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  color: var(--couleur-texte);
+  font-weight: 500;
+}
+
+.bien-detail-caracteristiques li {
+  background: var(--couleur-carte);
+  border: 1px solid var(--couleur-bordure);
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.bien-detail-description {
+  max-width: 680px;
+  margin-bottom: 2rem;
+  color: var(--couleur-texte-doux);
+}
+
+.etoiles {
+  display: inline-flex;
+  gap: 1px;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+
+.etoile {
+  color: var(--couleur-bordure);
+  font-size: 0.85rem;
+}
+
+.etoile--pleine {
+  color: var(--couleur-jaune);
+}
+
+.bien-detail-section {
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.bien-detail-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.bien-detail-statut {
+  display: inline-block;
+  background: var(--couleur-marine);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  margin: 0 0 0.9rem;
+}
+
+.bien-detail-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bien-detail-chip {
+  background: var(--couleur-carte);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 10px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.bien-detail-chip--avantage {
+  color: #2E7D32;
+  border-color: #BFE3C4;
+  background: #F0FAF1;
+}
+
+.bien-detail-avis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.avis-carte {
+  background: var(--couleur-carte);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.avis-carte-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.avis-carte-auteur {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.avis-carte-note {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--couleur-marine-fonce);
+  background: var(--couleur-tinte-douce);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.avis-carte-texte {
+  font-size: 0.88rem;
+  color: var(--couleur-texte-doux);
+  margin: 0;
+}
+
+.bien-detail-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.bien-detail-actions .bouton-plein:disabled {
+  background: var(--couleur-bordure);
+  color: var(--couleur-texte-doux);
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px) {
+  .bien-detail-avis {
+    grid-template-columns: 1fr;
+  }
+}

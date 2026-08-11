@@ -1,0 +1,71 @@
+.formulaire-page {
+  max-width: 620px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.formulaire-ligne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+
+.formulaire label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--couleur-marine-fonce);
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire textarea {
+  font-family: var(--police-texte);
+  font-size: 0.95rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+  resize: vertical;
+  background: var(--couleur-carte);
+  color: var(--couleur-texte);
+}
+
+.formulaire input:focus,
+.formulaire select:focus,
+.formulaire textarea:focus {
+  outline: 2px solid var(--couleur-accent);
+  outline-offset: 1px;
+}
+
+.formulaire-checkbox {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.5rem !important;
+}
+
+.formulaire-checkbox input {
+  width: auto;
+}
+
+.formulaire button {
+  align-self: flex-start;
+  border: none;
+}
+
+.formulaire-note {
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .formulaire-ligne {
+    grid-template-columns: 1fr;
+  }
+}

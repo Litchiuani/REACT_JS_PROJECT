@@ -1,0 +1,40 @@
+.contact-page {
+  max-width: 520px;
+}
+
+.contact-formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-formulaire label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--couleur-marine-fonce);
+}
+
+.contact-formulaire input,
+.contact-formulaire textarea {
+  font-family: var(--police-texte);
+  font-size: 0.95rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.contact-formulaire input:focus,
+.contact-formulaire textarea:focus {
+  outline: 2px solid var(--couleur-accent);
+  outline-offset: 1px;
+}
+
+.contact-formulaire button {
+  align-self: flex-start;
+  border: none;
+}

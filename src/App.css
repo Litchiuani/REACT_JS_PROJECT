@@ -1,0 +1,121 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.conteneur {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bouton-plein {
+  background: var(--couleur-accent);
+  color: #fff;
+}
+
+.bouton-plein:hover {
+  background: var(--couleur-accent-fonce);
+  transform: translateY(-1px);
+}
+
+.bouton-marine {
+  background: var(--couleur-marine);
+  color: #fff;
+}
+
+.bouton-marine:hover {
+  background: var(--couleur-marine-fonce);
+  transform: translateY(-1px);
+}
+
+.bouton-contour {
+  border-color: var(--couleur-marine);
+  color: var(--couleur-marine);
+  background: #fff;
+}
+
+.bouton-contour:hover {
+  background: var(--couleur-marine);
+  color: #fff;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-entete {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.section-entete h2 {
+  margin-bottom: 0.25rem;
+}
+
+.section-soustitre {
+  color: var(--couleur-texte-doux);
+  margin: 0;
+}
+
+.voir-tout {
+  font-weight: 600;
+  color: var(--couleur-marine);
+  white-space: nowrap;
+}
+
+.bien-grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .bien-grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .bien-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .bien-grille {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-titre-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--couleur-accent);
+  font-weight: 700;
+}

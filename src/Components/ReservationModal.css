@@ -1,0 +1,109 @@
+.modal-fond {
+  position: fixed;
+  inset: 0;
+  background: rgba(23, 17, 12, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-carte {
+  background: var(--couleur-carte);
+  border-radius: 20px;
+  max-width: 520px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: var(--ombre-carte-hover);
+}
+
+.modal-fermer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--couleur-tinte-douce);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--couleur-texte-doux);
+}
+
+.modal-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--couleur-accent);
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+}
+
+.modal-texte {
+  color: var(--couleur-texte-doux);
+  margin-bottom: 1.5rem;
+}
+
+.reservation-moyens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.reservation-moyen {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--couleur-fond);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.reservation-moyen:hover {
+  border-color: var(--couleur-accent);
+  transform: translateY(-1px);
+}
+
+.reservation-moyen-icone {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.reservation-moyen-libelle {
+  display: block;
+  font-weight: 700;
+  font-family: var(--police-titre);
+}
+
+.reservation-moyen-description {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--couleur-texte-doux);
+}
+
+.reservation-confirmation {
+  text-align: center;
+}
+
+.reservation-confirmation-icone {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.reservation-confirmation .modal-eyebrow {
+  margin-top: 0.25rem;
+}
+
+.reservation-confirmation .bouton {
+  margin-top: 0.5rem;
+}
+
+.formulaire-note {
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+}

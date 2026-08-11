@@ -1,0 +1,37 @@
+.cta-band {
+  background: linear-gradient(135deg, var(--couleur-marine) 0%, #0057B8 100%);
+  color: #fff;
+}
+
+.cta-band h2 {
+  color: #fff;
+}
+
+.cta-band-interieur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.75rem 0;
+}
+
+.cta-band-interieur > div:first-child {
+  max-width: 480px;
+}
+
+.cta-band-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.cta-contour-inverse {
+  border-color: #fff;
+  color: #fff;
+}
+
+.cta-contour-inverse:hover {
+  background: #fff;
+  color: var(--couleur-marine-fonce);
+}

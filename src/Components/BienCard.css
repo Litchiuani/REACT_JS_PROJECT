@@ -1,0 +1,137 @@
+.bien-card {
+  display: block;
+  background: var(--couleur-carte);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--ombre-carte);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bien-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ombre-carte-hover);
+}
+
+.bien-card-image {
+  height: 170px;
+  background-color: var(--couleur-tinte-douce);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bien-card-coeur {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  color: var(--couleur-accent);
+}
+
+.bien-card-badge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.bien-card-badge--location {
+  background: var(--couleur-marine);
+}
+
+.bien-card-badge--vente {
+  background: var(--couleur-accent-fonce);
+}
+
+.bien-card-piscine {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--couleur-texte);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+.bien-card-corps {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.bien-card-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bien-card-corps h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.1rem;
+  line-height: 1.25;
+}
+
+.bien-card-ville {
+  color: var(--couleur-texte-doux);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.bien-card-note {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.bien-card-note-libelle {
+  font-size: 0.68rem;
+  color: var(--couleur-texte-doux);
+  font-weight: 600;
+}
+
+.bien-card-note-chiffre {
+  background: var(--couleur-vert-note);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+}
+
+.bien-card-details {
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+  margin: 0.55rem 0 0.15rem;
+}
+
+.bien-card-avis {
+  color: var(--couleur-texte-doux);
+  font-size: 0.76rem;
+  margin: 0 0 0.6rem;
+}
+
+.bien-card-prix {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--couleur-texte-doux);
+}
+
+.bien-card-prix strong {
+  font-size: 1.02rem;
+  color: var(--couleur-texte);
+  font-weight: 700;
+}
